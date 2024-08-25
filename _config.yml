@@ -24,7 +24,7 @@ author:
   avatar           : "Chirag_Headshot.jpeg"
   name             : "Chirag Manchanda"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. in Environmental Engineering"
+  bio              : "Ph.D. Candidate in Environmental Engineering"
   location         : "Berkeley, California, USA"
   employer         : "University of California, Berkeley"
   uri              : chirag-manchanda.github.io
@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=gmq8-rAAAAAJ&hl=en"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-7492-9208"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Chirag-Manchanda"

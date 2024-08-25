@@ -29,18 +29,20 @@ Education
 
 Research Experience
 ======
-- **University of California, Berkeley** | Graduate Student Researcher
+- **University of California, Berkeley** | _Graduate Student Researcher_
   
-  Berkeley, CA | Apte Research Group | Fall 2021 - Present
+  Berkeley, CA | Apte Research Group
+  Fall 2021 - Present
 
   *Data-driven modeling and Assimilation Methods for Enhancing Urban Air Quality*  
   - Designed a statistical framework integrating mobile and fixed-site pollutant measurements to generate high-resolution and comprehensive pollutant concentration fields, enhancing spatial density and temporal completeness.
   - Implemented an innovative inverse modeling routine leveraging diverse pollutant monitoring techniques to improve the accuracy of pollutant emission flux estimates, refining and constraining emission sources.
   - Developed a dynamical controllability framework to assess optimal control strategies for reducing pollution exposure levels and disparities, providing valuable insights into achieving targeted air quality goals.
 
-- **Indian Institute of Technology Delhi** | Research Associate
+- **Indian Institute of Technology Delhi** | _Research Associate_
   
-  Delhi, India | Air Quality Research Group | Summer 2018 - Summer 2021
+  Delhi, India | Air Quality Research Group
+  Summer 2018 - Summer 2021
 
   *Source Apportionment Analysis for Quantifying Variation in Sources of Ambient PM2.5 during Periods of Marked Variation in Anthropogenic Activities in Delhi*  
   - Investigated the variation in chemical composition and sources contributing to ambient PM2.5 during a major firework event (Diwali) and the COVID-induced lockdown, utilizing near-real-time elemental and organic particulate measurements.
@@ -50,9 +52,10 @@ Research Experience
   - Carried out on-road measurements to investigate in-vehicle exposure to particulate matter in Delhi, examining the influence of congestion intensity, land-use patterns, and vehicular speed on particulate levels.
   - Compared on-road measurements with predicted PM levels at each site, employing imputation and low-rank estimation techniques to account for missing data from monitoring stations across Delhi. This estimation provided an assessment of the actual risk associated with on-road exposure to particulate matter, considering values beyond average levels recorded at monitoring stations.
 
-- **Nanyang Technological University Singapore** | Research Associate
+- **Nanyang Technological University Singapore** | _Research Associate_
   
-  Singapore | School of Mechanical and Aerospace Engineering | Spring 2018 - Summer 2018
+  Singapore | School of Mechanical and Aerospace Engineering
+  Spring 2018 - Summer 2018
 
   *Non-Invasive Detection of Stenosis in Human Carotid Arteries*  
   - Conducted high-resolution transient simulations utilizing High-Performance Computing (HPC) nodes to investigate the detection of stenosis in human carotid arteries. Discovered that the Strouhal number associated with a vortex in the shear layer downstream of the stenosed region varied with the degree of stenosis. This variation was identified as a distinct thermal signature that could be extracted from the neck surface.

@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+**About Me**
+
 Hi, I'm Chirag!
 
 I’m a Ph.D. Candidate in the Department of Civil and Environmental Engineering at UC Berkeley, where I work under the guidance of Prof. [Joshua Apte](https://ce.berkeley.edu/people/faculty/jsapte). 

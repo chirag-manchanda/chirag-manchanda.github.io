@@ -11,18 +11,15 @@ redirect_from:
 
 Education
 ======
-- **University of California, Berkeley**  
-  Berkeley, CA  
+- **University of California, Berkeley, USA**  
   Ph.D. in Environmental Engineering, Advisor: Prof. Joshua S. Apte  
   2021–Present
 
-- **University of California, Berkeley**  
-  Berkeley, CA  
+- **University of California, Berkeley, USA**  
   M.S. in Civil and Environmental Engineering, GPA: 4.0/4.0  
   2021–2022
 
-- **Manipal Institute of Technology, Manipal University**  
-  Karnataka, India  
+- **Manipal Institute of Technology, Manipal University, India**   
   B.Tech. in Mechanical Engineering, GPA: 9.82/10.0  
   2014–2018
 
@@ -31,7 +28,7 @@ Research Experience
 ======
 - **University of California, Berkeley** | _Graduate Student Researcher_
   
-  Berkeley, CA | Apte Research Group
+  Berkeley, CA | Apte Research Group | 
   Fall 2021 - Present
 
   *Data-driven modeling and Assimilation Methods for Enhancing Urban Air Quality*  
@@ -41,7 +38,7 @@ Research Experience
 
 - **Indian Institute of Technology Delhi** | _Research Associate_
   
-  Delhi, India | Air Quality Research Group
+  Delhi, India | Air Quality Research Group | 
   Summer 2018 - Summer 2021
 
   *Source Apportionment Analysis for Quantifying Variation in Sources of Ambient PM2.5 during Periods of Marked Variation in Anthropogenic Activities in Delhi*  
@@ -54,7 +51,7 @@ Research Experience
 
 - **Nanyang Technological University Singapore** | _Research Associate_
   
-  Singapore | School of Mechanical and Aerospace Engineering
+  Singapore | School of Mechanical and Aerospace Engineering | 
   Spring 2018 - Summer 2018
 
   *Non-Invasive Detection of Stenosis in Human Carotid Arteries*  

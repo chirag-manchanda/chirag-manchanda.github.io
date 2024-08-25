@@ -6,8 +6,9 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-Download [[pdf]](files/Chirag_CV.pdf)
 {% include base_path %}
+
+Download [[pdf]](https://berkeley.box.com/s/adxofvvw91toib2k4f85fxiuy2cy31oj)
 
 Education
 ======

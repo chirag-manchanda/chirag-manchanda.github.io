@@ -26,7 +26,8 @@ Education
 
 Research Experience
 ======
-- **University of California, Berkeley** | _Graduate Student Researcher_
+- **University of California, Berkeley** |
+  _Graduate Student Researcher_
   
   Berkeley, CA | Apte Research Group | 
   Fall 2021 - Present
@@ -36,7 +37,8 @@ Research Experience
   - Implemented an innovative inverse modeling routine leveraging diverse pollutant monitoring techniques to improve the accuracy of pollutant emission flux estimates, refining and constraining emission sources.
   - Developed a dynamical controllability framework to assess optimal control strategies for reducing pollution exposure levels and disparities, providing valuable insights into achieving targeted air quality goals.
 
-- **Indian Institute of Technology Delhi** | _Research Associate_
+- **Indian Institute of Technology Delhi** |
+  _Research Associate_
   
   Delhi, India | Air Quality Research Group | 
   Summer 2018 - Summer 2021
@@ -49,7 +51,8 @@ Research Experience
   - Carried out on-road measurements to investigate in-vehicle exposure to particulate matter in Delhi, examining the influence of congestion intensity, land-use patterns, and vehicular speed on particulate levels.
   - Compared on-road measurements with predicted PM levels at each site, employing imputation and low-rank estimation techniques to account for missing data from monitoring stations across Delhi. This estimation provided an assessment of the actual risk associated with on-road exposure to particulate matter, considering values beyond average levels recorded at monitoring stations.
 
-- **Nanyang Technological University Singapore** | _Research Associate_
+- **Nanyang Technological University Singapore** |
+  _Research Associate_
   
   Singapore | School of Mechanical and Aerospace Engineering | 
   Spring 2018 - Summer 2018

@@ -5,6 +5,9 @@ author_profile: true
 ---
 Journal Articles
 ======
+
+- **C. Manchanda**, R. Cohen, R. Alvarez, T. Thompson, M. Harris, A. Turner, J. Marshall, R. Harley, and J. Apte, "Hyperlocal Sensing and Inversion Reveal Community Impacts of Urban Air Pollutant Emissions", *Science* *(Under Review)*
+
 - J. Apte, and **C. Manchanda**, "High-resolution urban air pollution mapping", *Science*, **385**, 380-385, **2024**.[[Link]](https://doi.org/10.1126/science.adq3678)
 
 - **C. Manchanda**, R. Harley, J. Marshall, A. Turner, and J. Apte, "Integrating mobile and fixed-site black carbon measurements to bridge spatiotemporal gaps in urban air quality", *Environmental Science & Technology*, **58**, 12563–12574, **2024**.[[Link]](https://doi.org/10.1021/acs.est.3c10829)

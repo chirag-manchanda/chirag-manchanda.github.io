@@ -8,12 +8,13 @@ redirect_from:
 ---
 {% include base_path %}
 
-Download [[pdf]](https://berkeley.box.com/s/adxofvvw91toib2k4f85fxiuy2cy31oj)
+Download [[pdf]](https://berkeley.box.com/s/h0cy11zh4eqactw60kw542paipo5v87g)
 
 Education
 ======
 - **University of California, Berkeley, USA**  
-  Ph.D. in Environmental Engineering, Advisor: Prof. Joshua S. Apte  
+  Ph.D. in Environmental Engineering, GPA: 4.0/4.0  
+  Advisors: Prof. Joshua S. Apte and Prof. Robert A. Harley  
   2021–Present
 
 - **University of California, Berkeley, USA**  
@@ -34,9 +35,13 @@ Research Experience
   Fall 2021 - Present
 
   *Data-driven modeling and Assimilation Methods for Enhancing Urban Air Quality*  
-  - Designed a statistical framework integrating mobile and fixed-site pollutant measurements to generate high-resolution and comprehensive pollutant concentration fields, enhancing spatial density and temporal completeness.
-  - Implemented an innovative inverse modeling routine leveraging diverse pollutant monitoring techniques to improve the accuracy of pollutant emission flux estimates, refining and constraining emission sources.
-  - Developed a dynamical controllability framework to assess optimal control strategies for reducing pollution exposure levels and disparities, providing valuable insights into achieving targeted air quality goals.
+  - Develops a statistical framework that integrates mobile and fixed-site pollutant measurements to
+generate high-resolution pollutant concentration fields, improving spatial coverage and temporal
+completeness.
+  - Implements an advanced inverse modeling approach that assimilates data from diverse monitoring
+strategies to enable hyper-local Bayesian correction of pollutant emission estimates.
+  - Designs an optimal mitigation framework to identify control strategies that achieve ambient air
+quality standards with minimal emissions reductions while maximizing equity and climate co-benefits.
 
 - **Indian Institute of Technology Delhi** |
   _Research Associate_
@@ -68,23 +73,15 @@ Research Experience
 Scholarships and Awards
 ======
 
-- **Outstanding Graduate Student Instructor Award** | 2024  
-  Recognized among the top 5 percent of teaching assistants at UC Berkeley for excellence in instruction.
-
-- **STEM*FYI Graduate Diversity Fellow** | 2023  
-  Awarded USD 500 technology grant by the Office of Graduate Diversity, UC Berkeley.
-
-- **Founder's Gold Medal for the Best Outgoing Student** | 2018  
-  Ranked First (out of 270 students) in the graduating class of 2018, Manipal University.
-
-- **NTU India Connect Scholar** | 2018  
-  Selected among 3 students from India for conducting thesis research at Nanyang Technological University, Singapore.
-
-- **Avery Dennison InvEnt Scholarship** | 2015  
-  Awarded USD 1300 for innovative skills and academic performance.
-
-- **Academic Excellence Award** | 2014 - 2018  
-  Recipient of the Academic Excellence Award for each academic year consecutively throughout the bachelor's degree.
+- **Jane Warren Award** | *Health Effects Institute* | 2025
+- **JN Tata Gift Award** | *Tata Education and Development Trust* | 2025
+- **Outstanding Graduate Student Instructor Award** | *UC Berkeley* | 2024  
+- **STEM*FYI Graduate Diversity Fellow** | *UC Berkeley* | 2023  
+- **Founder's Gold Medal for the Best Outgoing Student** | *Manipal University* | 2018  
+- **NTU India Connect Scholar** | *Nanyang Technological University Singapore* | 2018  
+- **Summer Undergraduate Research Grant for Excellence** | *Indian Institute of Technology Delhi* | 2017  
+- **Avery Dennison InvEnt Scholar** | *Avery Dennison Foundation* | 2015  
+- 4x **Academic Excellence Award** | *Manipal University* | 2014 - 2018  
 
   
 Teaching

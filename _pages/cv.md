@@ -8,7 +8,7 @@ redirect_from:
 ---
 {% include base_path %}
 
-Download [[pdf]](https://berkeley.box.com/s/h0cy11zh4eqactw60kw542paipo5v87g)
+Download [[pdf]](https://berkeley.box.com/s/h0cy11zh4eqactw60kw542paipo5v87g) 
 
 Education
 ======

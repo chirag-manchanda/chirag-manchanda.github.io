@@ -73,15 +73,15 @@ quality standards with minimal emissions reductions while maximizing equity and 
 Scholarships and Awards
 ======
 
-- **Jane Warren Award** | *Health Effects Institute* | 2025
-- **JN Tata Gift Award** | *Tata Education and Development Trust* | 2025
-- **Outstanding Graduate Student Instructor Award** | *UC Berkeley* | 2024  
-- **STEM*FYI Graduate Diversity Fellow** | *UC Berkeley* | 2023  
-- **Founder's Gold Medal for the Best Outgoing Student** | *Manipal University* | 2018  
-- **NTU India Connect Scholar** | *Nanyang Technological University Singapore* | 2018  
-- **Summer Undergraduate Research Grant for Excellence** | *Indian Institute of Technology Delhi* | 2017  
-- **Avery Dennison InvEnt Scholar** | *Avery Dennison Foundation* | 2015  
-- 4x **Academic Excellence Award** | *Manipal University* | 2014 - 2018  
+- **Jane Warren Award** – *Health Effects Institute*, 2025  
+- **JN Tata Gift Award** – *Tata Education and Development Trust*, 2025  
+- **Outstanding Graduate Student Instructor Award** – *UC Berkeley*, 2024  
+- **STEM*FYI Graduate Diversity Fellow** – *UC Berkeley*, 2023  
+- **Founder's Gold Medal for the Best Outgoing Student** – *Manipal University*, 2018  
+- **NTU India Connect Scholar** – *Nanyang Technological University Singapore*, 2018  
+- **Summer Undergraduate Research Grant for Excellence** – *Indian Institute of Technology Delhi*, 2017  
+- **Avery Dennison InvEnt Scholar** – *Avery Dennison Foundation*, 2015  
+- 4× **Academic Excellence Award** – *Manipal University*, 2014–2018  
 
   
 Teaching

@@ -6,7 +6,11 @@ author_profile: true
 Journal Articles
 ======
 
-- **C. Manchanda**, R. Cohen, R. Alvarez, T. Thompson, M. Harris, A. Turner, J. Marshall, R. Harley, and J. Apte, "Hyperlocal Sensing and Inversion Reveal Community Impacts of Urban Air Pollutant Emissions", *Science* *(Under Review)*
+- L. Koolik*, **C. Manchanda***, A. Unal, I. Fung, J. Marshall, R. Morello-Frosch, A. Turner, R. Harley, and J. Apte,
+"Modeling Optimal Pathways to a Triple Win in Air Quality, Climate, and Equity."
+[[Preprint]](https://doi.org/10.26434/chemrxiv-2025-c6sn4)
+
+- **C. Manchanda**, R. Cohen, R. Alvarez, T. Thompson, M. Harris, A. Turner, J. Marshall, R. Harley, and J. Apte, "Hyperlocal Sensing and Inversion Reveal Community Impacts of Urban Air Pollutant Emissions", *Science Advances* *(In Revision)*[[Preprint]](https://doi.org/10.26434/chemrxiv-2025-zt4zh)
 
 - J. Apte, and **C. Manchanda**, "High-resolution urban air pollution mapping", *Science*, **385**, 380-385, **2024**.[[Link]](https://doi.org/10.1126/science.adq3678)
 
@@ -21,4 +25,5 @@ Journal Articles
 - A. Saxena, E. Ng, **C. Manchanda**, and T. Canchi, “Cardiac thermal pulse at the neck-skin surface as a measure of stenosis in the carotid artery”, *Thermal Science and Engineering Progress*, **19**, 100603, **2020**.[[Link]](https://doi.org/10.1016/j.tsep.2020.100603)
 
 - A. Saxena, E. Ng, M. Mathur, **C. Manchanda**, and N. Jajal, “Effect of carotid artery stenosis on neck skin tissue heat transfer”, *International Journal of Thermal Sciences*, **145**, 106010, **2019**.[[Link]](https://doi.org/10.1016/j.ijthermalsci.2019.106010)
+
 

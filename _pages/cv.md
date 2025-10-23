@@ -8,14 +8,14 @@ redirect_from:
 ---
 {% include base_path %}
 
-Download [[pdf]](https://berkeley.box.com/s/h0cy11zh4eqactw60kw542paipo5v87g) 
+Download [[pdf]](https://berkeley.box.com/s/0hxc7dv89i1j3sor8dln2dguxzbrr181) 
 
 Education
 ======
 - **University of California, Berkeley, USA**  
   Ph.D. in Environmental Engineering, GPA: 4.0/4.0  
   Advisors: Prof. Joshua S. Apte and Prof. Robert A. Harley  
-  2021–Present
+  2021–2026
 
 - **University of California, Berkeley, USA**  
   M.S. in Civil and Environmental Engineering, GPA: 4.0/4.0  

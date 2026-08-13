@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chirag Manchanda — Environmental engineer, Stanford ECHO Lab</title>
+<meta name="description" content="Chirag Manchanda is a postdoctoral scholar at Stanford University. He works on inverse modeling, data assimilation and physics-informed machine learning for air quality, climate and environmental equity.">
+<link rel="canonical" href="https://chirag-manchanda.github.io/">
+<meta property="og:title" content="Chirag Manchanda">
+<meta property="og:description" content="Environmental engineer. Inverse modeling, data assimilation and physics-informed machine learning for air quality, climate and equity.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://chirag-manchanda.github.io/">
+<meta property="og:image" content="https://chirag-manchanda.github.io/images/Chirag_Headshot.jpeg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --paper:#F6F7F5;
+    --paper-2:#EDEFEB;
+    --ink:#0F1418;
+    --ink-2:#28323A;
+    --slate:#5C6771;
+    --slate-2:#69737B;
+    --petrol:#123A47;
+    --petrol-deep:#0B2028;
+    --amber:#C98A12;
+    --amber-ink:#8A5F06;
+    --brick:#A83A26;
+    --rule:#DBDFDA;
+    --rule-2:#C7CDC6;
+
+    --f-display:'Archivo','Helvetica Neue',Arial,sans-serif;
+    --f-body:'Spectral',Georgia,'Times New Roman',serif;
+    --f-mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+
+    --pad-x:clamp(20px,5vw,64px);
+    --sec-y:clamp(60px,8vw,116px);
+    --max:1200px;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  html:focus-within{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--f-body);font-size:1.0625rem;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:#123A4722}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  sup{font-size:.7em;vertical-align:super;line-height:0}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--pad-x)}
+  section,header,aside{scroll-margin-top:60px}
+  .pad{padding-block:var(--sec-y)}
+
+  .mono{
+    font-family:var(--f-mono);font-size:.66rem;font-weight:500;
+    letter-spacing:.15em;text-transform:uppercase;
+  }
+  .lede{font-size:clamp(1.1rem,1.55vw,1.28rem);line-height:1.56;color:var(--ink-2)}
+  :focus-visible{outline:2px solid var(--petrol);outline-offset:3px;border-radius:2px}
+
+  .rise{transition:opacity .62s cubic-bezier(.22,.7,.3,1),transform .62s cubic-bezier(.22,.7,.3,1)}
+  .js .rise{opacity:0;transform:translateY(14px)}
+  .js .rise.in{opacity:1;transform:none}
+
+  /* top bar */
+  .nav{
+    position:sticky;top:0;z-index:60;
+    background:rgba(246,247,245,.92);
+    backdrop-filter:saturate(1.4) blur(10px);
+    border-bottom:1px solid var(--rule);
+  }
+  .nav-in{
+    max-width:var(--max);margin:0 auto;padding:0 var(--pad-x);
+    height:52px;display:flex;align-items:center;gap:26px;
+  }
+  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;margin-right:auto}
+  .brand-mark{
+    font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.06em;
+    color:var(--paper);background:var(--petrol);padding:5px 6px 4px;border-radius:2px;
+  }
+  .brand-name{
+    font-family:var(--f-display);font-variation-settings:'wdth' 104,'wght' 600;
+    font-size:.92rem;letter-spacing:-.005em;
+  }
+  .nav-links{display:flex;gap:24px;align-items:center}
+  .nav-links a{
+    text-decoration:none;color:var(--slate);font-family:var(--f-mono);font-size:.65rem;
+    font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+    padding:4px 0;border-bottom:1px solid transparent;transition:color .18s,border-color .18s;
+  }
+  .nav-links a:hover,.nav-links a.here{color:var(--ink);border-bottom-color:var(--amber)}
+  @media (max-width:760px){
+    .brand-name{display:none}
+    .nav-in{gap:14px}
+    .nav-links{gap:16px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .nav-links::-webkit-scrollbar{display:none}
+  }
+
+  /* opening block */
+  .hero{padding-block:clamp(40px,5.5vw,76px) clamp(44px,5.5vw,72px)}
+  .hero-grid{
+    display:grid;grid-template-columns:minmax(0,1.62fr) minmax(0,1fr);
+    gap:clamp(30px,4.6vw,68px);align-items:start;
+  }
+  @media (max-width:940px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+
+  .eyebrow{color:var(--slate);display:flex;align-items:center;gap:11px;margin:0 0 20px}
+  .eyebrow b{color:var(--petrol);font-weight:600}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--rule-2)}
+
+  h1.name{
+    margin:0 0 20px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 118,'wght' 630;
+    font-size:clamp(2.6rem,6.6vw,4.7rem);line-height:.99;letter-spacing:-.028em;
+  }
+  h1.name span{display:block}
+  h1.name span:last-child{color:var(--petrol)}
+
+  .thesis{
+    margin:0 0 20px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 104,'wght' 480;
+    font-size:clamp(1.24rem,2.35vw,1.82rem);line-height:1.26;letter-spacing:-.018em;
+    color:var(--ink);max-width:30ch;text-wrap:pretty;
+  }
+  .thesis u{
+    text-decoration:none;color:var(--petrol);
+    box-shadow:inset 0 -.34em 0 rgba(201,138,18,.28);
+  }
+  .hero .sub{margin:0 0 26px;max-width:47ch;color:var(--slate);font-size:1.02rem}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+    font-family:var(--f-mono);font-size:.67rem;font-weight:500;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--petrol);
+    border:1px solid var(--rule-2);border-radius:2px;padding:8px 11px;
+    transition:background .18s,border-color .18s,color .18s;
+  }
+  .chip:hover{background:var(--petrol);border-color:var(--petrol);color:var(--paper)}
+  .chip.solid{background:var(--petrol);border-color:var(--petrol);color:var(--paper)}
+  .chip.solid:hover{background:var(--ink);border-color:var(--ink)}
+
+  .card{border:1px solid var(--rule);border-radius:3px;overflow:hidden;background:var(--paper)}
+  .card img{display:block;width:100%;height:auto;margin:0;object-fit:contain;filter:saturate(.94)}
+  .stack{padding:16px 16px 18px;display:grid;gap:15px}
+  .stack .row2{display:grid;gap:4px}
+  .stack dt{color:var(--slate-2)}
+  .stack dd{margin:0;font-size:.95rem;line-height:1.45}
+  .stack dd a{text-decoration:none;border-bottom:1px solid var(--rule-2)}
+  .stack dd a:hover{border-bottom-color:var(--petrol);color:var(--petrol)}
+  .stack .sep{height:1px;background:var(--rule)}
+  .stack .big{
+    font-family:var(--f-display);font-variation-settings:'wdth' 104,'wght' 600;
+    font-size:1rem;letter-spacing:-.008em;line-height:1.3;
+  }
+
+  /* dark results strip */
+  .band{background:var(--petrol-deep);color:var(--paper)}
+  .band .pad{padding-block:clamp(46px,5.6vw,78px)}
+  .band-lab{color:rgba(246,247,245,.5);display:flex;align-items:center;gap:12px;margin:0 0 30px}
+  .band-lab::after{content:"";flex:1;height:1px;background:rgba(246,247,245,.16)}
+  .metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+  @media (max-width:880px){.metrics{grid-template-columns:1fr}}
+  .metric{padding:0 clamp(18px,2.6vw,34px);border-left:1px solid rgba(246,247,245,.16)}
+  .metric:first-child{padding-left:0;border-left:0}
+  @media (max-width:880px){
+    .metric{padding:24px 0;border-left:0;border-top:1px solid rgba(246,247,245,.16)}
+    .metric:first-child{padding-top:0;border-top:0}
+  }
+  .metric .fig{
+    display:block;margin:0 0 4px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 112,'wght' 620;
+    font-size:clamp(2rem,3.4vw,2.75rem);line-height:1;letter-spacing:-.03em;color:var(--amber);
+  }
+  .metric .what{
+    display:block;color:rgba(246,247,245,.55);margin-bottom:13px;
+    font-family:var(--f-mono);font-size:.63rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  }
+  .metric p{margin:0 0 14px;font-size:.97rem;line-height:1.55;color:rgba(246,247,245,.88)}
+  .src{
+    display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    font-family:var(--f-mono);font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(246,247,245,.66);border-bottom:1px solid rgba(246,247,245,.28);padding-bottom:2px;
+    transition:color .18s,border-color .18s;
+  }
+  .src:hover{color:var(--paper);border-color:var(--amber)}
+  .band-note{
+    margin:clamp(28px,3.4vw,42px) 0 0;padding-top:16px;
+    border-top:1px solid rgba(246,247,245,.16);
+    color:rgba(246,247,245,.5);font-size:.88rem;
+  }
+
+  /* section chrome */
+  section.lit{border-top:1px solid var(--rule)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:clamp(26px,3.2vw,42px)}
+  .sec-num{
+    font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.05em;
+    color:var(--amber-ink);flex:none;
+  }
+  h2{
+    margin:0;font-family:var(--f-display);
+    font-variation-settings:'wdth' 110,'wght' 620;
+    font-size:clamp(1.45rem,2.6vw,2rem);letter-spacing:-.02em;line-height:1.1;
+  }
+  .sec-head .rule{flex:1;height:1px;background:var(--rule);align-self:center}
+  .blk{margin-bottom:clamp(36px,4.2vw,56px)}
+  .blk:last-child{margin-bottom:0}
+  .blk-lab{display:flex;align-items:center;gap:12px;margin:0 0 18px;color:var(--petrol)}
+  .blk-lab::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+  .about-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(30px,4.6vw,62px)}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:34px}}
+  .prose p{margin:0 0 1.05em;max-width:64ch}
+  .prose p:last-child{margin-bottom:0}
+  .prose a{text-decoration:none;border-bottom:1px solid var(--rule-2)}
+  .prose a:hover{border-bottom-color:var(--petrol);color:var(--petrol)}
+  .glance{margin:0;display:grid;gap:13px;border-left:2px solid var(--rule);padding-left:20px}
+  .glance div{display:grid;gap:2px}
+  .glance dt{color:var(--slate-2)}
+  .glance dd{margin:0;font-size:.95rem;line-height:1.45}
+
+  /* research thrusts */
+  .thrust{
+    display:grid;grid-template-columns:8.5rem minmax(0,1fr);
+    gap:clamp(16px,3vw,40px);
+    padding:clamp(26px,3.2vw,40px) 0;border-top:1px solid var(--rule);
+  }
+  .thrust:last-of-type{border-bottom:1px solid var(--rule)}
+  @media (max-width:800px){.thrust{grid-template-columns:1fr;gap:14px;padding:28px 0}}
+  .thrust-key{position:sticky;top:76px;align-self:start}
+  @media (max-width:800px){.thrust-key{position:static}}
+  .thrust-key .verb{
+    display:block;font-family:var(--f-display);
+    font-variation-settings:'wdth' 100,'wght' 640;
+    font-size:1.15rem;letter-spacing:.02em;text-transform:uppercase;color:var(--petrol);
+    margin-bottom:4px;
+  }
+  .thrust-key .idx{color:var(--slate-2)}
+  .thrust h3{
+    margin:0 0 12px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 106,'wght' 600;
+    font-size:clamp(1.1rem,1.75vw,1.32rem);letter-spacing:-.014em;line-height:1.24;
+  }
+  .thrust p{margin:0 0 1em;font-size:1rem;line-height:1.6;color:var(--ink-2);max-width:62ch}
+  .thrust p:last-of-type{margin-bottom:0}
+  .next{margin-top:20px;border-top:1px dashed var(--rule-2);padding-top:16px}
+  .next .h{color:var(--slate-2);margin:0 0 12px;display:block}
+  .next ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+  .next li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:baseline}
+  .next li::before{content:"→";color:var(--amber-ink);font-family:var(--f-mono);font-size:.8rem}
+  .next li p{margin:0;font-size:.95rem;line-height:1.55;color:var(--slate)}
+  .next li b{color:var(--ink);font-weight:600;font-style:italic}
+
+  /* year / item / org rows */
+  .rows{display:grid}
+  .row{
+    display:grid;grid-template-columns:6.4rem minmax(0,1fr) minmax(0,.8fr);
+    gap:clamp(12px,2vw,26px);padding:15px 0;border-top:1px solid var(--rule);align-items:baseline;
+  }
+  .row:last-child{border-bottom:1px solid var(--rule)}
+  @media (max-width:780px){
+    .row{grid-template-columns:1fr;gap:4px;padding:16px 0}
+    .row .org{color:var(--slate)}
+  }
+  .row .yr{color:var(--slate-2)}
+  .row .what{font-size:1rem;line-height:1.45}
+  .row .what b{font-weight:600}
+  .row .what .q{color:var(--ink-2)}
+  .row .org{font-size:.93rem;color:var(--slate);font-style:italic;line-height:1.45}
+  .row .mult{font-family:var(--f-mono);font-size:.7rem;font-weight:600;color:var(--amber-ink);margin-right:5px}
+  .row .fmt{
+    display:inline-block;margin-left:6px;font-family:var(--f-mono);font-size:.58rem;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);
+    background:var(--paper-2);border-radius:2px;padding:3px 6px;vertical-align:1px;
+  }
+
+  .appt{
+    display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:clamp(14px,2.4vw,32px);
+    padding:19px 0;border-top:1px solid var(--rule);
+  }
+  .appt:last-child{border-bottom:1px solid var(--rule)}
+  @media (max-width:640px){.appt{grid-template-columns:1fr;gap:7px}}
+  .appt .yr{color:var(--slate-2);padding-top:.3em}
+  .appt h4{
+    margin:0 0 4px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 104,'wght' 600;font-size:1.02rem;letter-spacing:-.008em;
+  }
+  .appt .role{color:var(--petrol);font-style:italic;font-size:.95rem}
+  .appt p{margin:6px 0 0;font-size:.94rem;color:var(--slate);line-height:1.55;max-width:62ch}
+
+  /* citations */
+  .pub,.patent{
+    display:grid;grid-template-columns:2.6rem minmax(0,1fr);
+    gap:clamp(10px,1.6vw,20px);border-top:1px solid var(--rule);
+  }
+  .pub{padding:20px 0}
+  .patent{padding:18px 0}
+  .pub:last-of-type,.patent:last-of-type{border-bottom:1px solid var(--rule)}
+  @media (max-width:640px){.pub,.patent{grid-template-columns:1fr;gap:8px}}
+  .pub .n,.patent .n{
+    color:var(--slate-2);padding-top:.34em;
+    font-family:var(--f-mono);font-size:.72rem;font-weight:500;
+  }
+  .cite{margin:0;font-size:1rem;line-height:1.55}
+  .cite .me{font-weight:600;color:var(--ink)}
+  .cite .jr{font-style:italic;color:var(--petrol)}
+  .pub-meta{margin-top:9px;display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+  .doi{
+    display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    font-family:var(--f-mono);font-size:.61rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--petrol);border:1px solid var(--rule-2);border-radius:2px;padding:5px 8px;
+    transition:background .18s,color .18s,border-color .18s;
+  }
+  .doi:hover{background:var(--petrol);color:var(--paper);border-color:var(--petrol)}
+  .status{
+    font-family:var(--f-mono);font-size:.59rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--brick);border:1px solid rgba(168,58,38,.34);background:rgba(168,58,38,.06);
+    border-radius:2px;padding:5px 8px;
+  }
+  .status.cool{color:var(--petrol);border-color:rgba(18,58,71,.3);background:rgba(18,58,71,.05)}
+  .patent .no{margin:7px 0 0;color:var(--slate);font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em}
+  .fn{margin:16px 0 0;color:var(--slate-2);font-size:.87rem}
+  .fn a{text-decoration:none;border-bottom:1px solid var(--rule-2)}
+  .fn a:hover{color:var(--petrol);border-bottom-color:var(--petrol)}
+
+  .edu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule)}
+  @media (max-width:900px){.edu{grid-template-columns:1fr}}
+  .edu-item{background:var(--paper);padding:clamp(18px,2.2vw,26px)}
+  .edu-item .yr{color:var(--slate-2);display:block;margin-bottom:12px}
+  .edu-item h4{
+    margin:0 0 6px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 104,'wght' 600;font-size:1rem;line-height:1.25;letter-spacing:-.008em;
+  }
+  .edu-item p{margin:0;font-size:.93rem;color:var(--slate);line-height:1.55}
+  .edu-item .gpa{
+    display:inline-block;margin-top:10px;font-family:var(--f-mono);font-size:.61rem;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);
+    background:var(--paper-2);border-radius:2px;padding:4px 7px;
+  }
+
+  .mentee{padding:16px 0;border-top:1px solid var(--rule)}
+  .mentee:last-child{border-bottom:1px solid var(--rule)}
+  .mentee h4{
+    margin:0 0 4px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 104,'wght' 600;font-size:.99rem;letter-spacing:-.006em;
+  }
+  .mentee p{margin:0;font-size:.94rem;color:var(--slate);line-height:1.55;max-width:70ch}
+  .mentee .yr{color:var(--slate-2);margin-left:8px;font-weight:500}
+
+  .cv-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:clamp(28px,3.4vw,42px)}
+  .cv-top p{margin:0;color:var(--slate);font-size:.95rem;max-width:44ch}
+
+  .epi{background:var(--paper-2);border-top:1px solid var(--rule)}
+  .epi .pad{padding-block:clamp(46px,5.6vw,76px)}
+  .epi .lab{color:var(--slate-2);margin:0 0 26px;display:flex;align-items:center;gap:12px}
+  .epi .lab::after{content:"";flex:1;height:1px;background:var(--rule-2)}
+  .quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3.4vw,46px)}
+  @media (max-width:860px){.quotes{grid-template-columns:1fr;gap:26px}}
+  .q blockquote{
+    margin:0 0 11px;font-size:clamp(1rem,1.3vw,1.12rem);line-height:1.5;
+    color:var(--ink-2);text-wrap:pretty;
+  }
+  .q blockquote::before{content:"\201C";color:var(--amber);margin-right:2px}
+  .q blockquote::after{content:"\201D";color:var(--amber)}
+  .q cite{
+    font-style:normal;color:var(--slate-2);
+    font-family:var(--f-mono);font-size:.62rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
+  }
+
+  footer{background:var(--petrol-deep);color:var(--paper)}
+  footer .pad{padding-block:clamp(50px,6vw,80px)}
+  .foot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(30px,4vw,60px);align-items:end}
+  @media (max-width:780px){.foot-grid{grid-template-columns:1fr;gap:34px;align-items:start}}
+  .foot-h{
+    margin:0 0 10px;font-family:var(--f-display);
+    font-variation-settings:'wdth' 116,'wght' 620;
+    font-size:clamp(1.65rem,3.8vw,2.5rem);letter-spacing:-.024em;line-height:1.05;
+  }
+  .foot-grid>div>p{margin:0 0 20px;color:rgba(246,247,245,.7);max-width:40ch}
+  .mails{display:grid;gap:7px}
+  .mails a{
+    display:inline-block;text-decoration:none;font-family:var(--f-mono);
+    font-size:clamp(.78rem,1.4vw,.94rem);letter-spacing:.02em;color:var(--paper);
+    border-bottom:1.5px solid var(--amber);padding-bottom:3px;justify-self:start;
+  }
+  .mails a:hover{color:var(--amber)}
+  .mails .alt{border-bottom-color:rgba(246,247,245,.28);color:rgba(246,247,245,.72)}
+  .foot-links{display:grid;gap:0}
+  .foot-links a{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    text-decoration:none;padding:13px 0;border-top:1px solid rgba(246,247,245,.16);
+    font-family:var(--f-mono);font-size:.66rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+    color:rgba(246,247,245,.9);transition:color .18s,padding-left .22s;
+  }
+  .foot-links a:last-child{border-bottom:1px solid rgba(246,247,245,.16)}
+  .foot-links a span{color:rgba(246,247,245,.45);transition:transform .22s,color .18s}
+  .foot-links a:hover{color:var(--paper);padding-left:6px}
+  .foot-links a:hover span{transform:translateX(3px);color:var(--amber)}
+  .colophon{
+    margin-top:clamp(36px,4.6vw,60px);padding-top:16px;border-top:1px solid rgba(246,247,245,.16);
+    display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+    color:rgba(246,247,245,.45);
+  }
+  .colophon a{color:rgba(246,247,245,.62);text-decoration:none;border-bottom:1px solid rgba(246,247,245,.24)}
+  .colophon a:hover{color:var(--paper)}
+  .credits{width:100%;max-width:62ch;line-height:1.7;text-transform:none;letter-spacing:.02em;font-size:.7rem}
+
+  @media (prefers-reduced-motion:reduce){
+    html:focus-within{scroll-behavior:auto}
+    .js .rise{opacity:1;transform:none}
+    *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">CM</span>
+      <span class="brand-name">Chirag Manchanda</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div>
+      <p class="mono eyebrow rise"><b>Postdoctoral Scholar</b> · Stanford University</p>
+
+      <h1 class="name rise"><span>Chirag</span><span>Manchanda</span></h1>
+
+      <p class="thesis rise">Air pollution research is still much better at <u>describing the problem</u> than at <u>designing the solution</u>. I work on the second half.</p>
+
+      <p class="sub rise">Environmental engineer. I use inverse modeling, data assimilation and physics-informed machine learning to get from noisy, multi-scale measurements to specific decisions about cleaner air, climate, and who ends up breathing what.</p>
+
+      <div class="chips rise">
+        <a class="chip solid" href="files/Chirag_Manchanda_CV.pdf">Curriculum vitae ↓</a>
+        <a class="chip" href="mailto:chiragmc@stanford.edu">Email</a>
+        <a class="chip" href="https://scholar.google.com/citations?user=gmq8-rAAAAAJ&amp;hl=en">Scholar</a>
+        <a class="chip" href="https://orcid.org/0000-0001-7492-9208">ORCID</a>
+      </div>
+    </div>
+
+    <div class="card rise">
+      <img src="images/Chirag_Headshot.jpeg" alt="Portrait of Chirag Manchanda" width="1000" height="1000" fetchpriority="high">
+      <dl class="stack">
+        <div class="row2">
+          <dt class="mono">Now</dt>
+          <dd class="big">Stanford University</dd>
+          <dd>Postdoctoral Scholar, Environmental Social Sciences. <a href="https://www.stanfordecholab.com/">ECHO Lab</a>, Doerr School of Sustainability, with <a href="https://web.stanford.edu/~mburke/">Marshall Burke</a>.</dd>
+        </div>
+        <div class="sep"></div>
+        <div class="row2">
+          <dt class="mono">Before</dt>
+          <dd class="big">UC Berkeley</dd>
+          <dd>Ph.D. Environmental Engineering, 2026, with <a href="https://ce.berkeley.edu/people/faculty/jsapte">Joshua&nbsp;Apte</a> and <a href="https://ce.berkeley.edu/people/faculty/harley">Robert&nbsp;Harley</a>.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<aside class="band">
+  <div class="wrap pad">
+    <p class="mono band-lab rise">Three results from my dissertation</p>
+    <div class="metrics">
+      <div class="metric rise">
+        <span class="fig">30 m · 15 min</span>
+        <span class="what">Concentration fields</span>
+        <p>The resolution of the urban pollutant fields I reconstruct by fusing Google Street View mobile monitoring with fixed-site sensor networks. Built on compressive sensing, so the structure comes out of the measurements and not out of an assumed inventory.</p>
+        <a class="src" href="https://doi.org/10.1021/acs.est.3c10829">Environ. Sci. Technol. 2024 ↗</a>
+      </div>
+      <div class="metric rise">
+        <span class="fig">~150 m</span>
+        <span class="what">Emissions attribution</span>
+        <p>How far down I pushed Bayesian inversion. Fine enough to attribute emissions to one corridor, one facility, one neighborhood, and to test a change like rerouting freight before anyone commits to it.</p>
+        <a class="src" href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Science Advances, in revision ↗</a>
+      </div>
+      <div class="metric rise">
+        <span class="fig">3 goals, 1 problem</span>
+        <span class="what">Policy optimization</span>
+        <p>Air quality, climate and equity solved together instead of traded off afterwards. In California this favored a set of targeted low-emission zones over uniform regional cuts, and got more exposure reduction and less disparity out of them.</p>
+        <a class="src" href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Koolik &amp; Manchanda et al. 2025 ↗</a>
+      </div>
+    </div>
+    <p class="band-note rise">Two U.S. provisional patents have been filed on the hyperlocal detection and emissions-reduction methods behind this work.</p>
+  </div>
+</aside>
+
+<section class="lit" id="about">
+  <div class="wrap pad">
+    <div class="sec-head rise">
+      <span class="sec-num">§01</span>
+      <h2>About</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="about-grid">
+      <div class="prose rise">
+        <p>Air pollution is the leading environmental cause of premature death worldwide. Most of the modeling and monitoring we have built to address it is very good at telling you the air is bad. It is much less good at telling you what to do about that. I work on the second problem.</p>
+
+        <p>I am an environmental engineer. Right now I am a postdoctoral scholar in the <a href="https://www.stanfordecholab.com/">ECHO Lab</a> at Stanford's Doerr School of Sustainability, working with <a href="https://web.stanford.edu/~mburke/">Marshall Burke</a>. Before that I spent five years at UC Berkeley, where I finished my Ph.D. in Environmental Engineering in 2026 under <a href="https://ce.berkeley.edu/people/faculty/jsapte">Joshua Apte</a> and <a href="https://ce.berkeley.edu/people/faculty/harley">Robert Harley</a>.</p>
+
+        <p>The work combines multi-platform measurements with mechanistic and statistical models. I use them to reconstruct pollution at the scale of city blocks, trace those concentrations back to the sources that produced them, and then work out which emissions are actually driving exposure and which reductions would buy the most health benefit for the effort. My earlier research in Delhi came at the same question from a different direction. Two natural experiments, a festival and a nationwide lockdown, changed the city's emissions almost overnight, and chemically speciated measurements let me watch how the atmosphere responded. The relationships turned out to be nonlinear in ways an inventory would not have predicted.</p>
+
+        <p>I care about the methods, but mostly for what they let me say. A city deciding where to draw a low-emission zone needs to know which sources dominate that particular block, what the control will cost, and who has been breathing the difference. Getting evidence to that resolution is the part I find worth doing.</p>
+      </div>
+
+      <dl class="glance rise">
+        <div><dt class="mono">Methods</dt><dd>Inverse modeling · Data assimilation · Physics-informed machine learning · Bayesian experimental design · Optimization</dd></div>
+        <div><dt class="mono">Pollutants</dt><dd>Black carbon, NO<sub>x</sub>, PM<sub>2.5</sub> and its chemical components</dd></div>
+        <div><dt class="mono">Field sites</dt><dd>San Francisco Bay Area · California · New Delhi</dd></div>
+        <div><dt class="mono">Based in</dt><dd>Stanford, California</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="lit" id="research">
+  <div class="wrap pad">
+    <div class="sec-head rise">
+      <span class="sec-num">§02</span>
+      <h2>Research</h2>
+      <span class="rule"></span>
+    </div>
+    <p class="lede rise" style="max-width:60ch;margin:0 0 clamp(24px,3vw,38px)">Three connected questions. How we <b style="font-weight:600">observe</b> air pollution, how we <b style="font-weight:600">attribute</b> it to the sources and infrastructures that produce it, and how we <b style="font-weight:600">design</b> the policies that reduce both climate impact and exposure disparity.</p>
+
+    <article class="thrust rise">
+      <div class="thrust-key">
+        <span class="verb">Observe</span>
+        <span class="idx mono">§02.1</span>
+      </div>
+      <div>
+        <h3>Next-generation environmental sensing systems</h3>
+        <p>There is an awkward mismatch at the centre of air quality science. The spatial and temporal scales that matter most for health and policy are the ones we observe least. Fixed monitors, mobile platforms, aircraft and satellites all look at the same city, and each one sees a narrow, biased slice of it.</p>
+        <p>For my dissertation I built an assimilation system that combined mobile monitoring from Google Street View cars with fixed-site sensor networks, producing pollutant concentration fields at 30 meters and 15 minutes. It rests on compressive sensing rather than a prescribed inventory, so the spatiotemporal structure comes out of the data instead of being assumed going in. The maps showed sharp gradients along freight corridors and around small industrial clusters, features that conventional monitoring networks and chemical transport models both tend to smear away. They also turned out to be useful for decisions people were already trying to make: where to put the next monitor, which freight routes to target, how to draw a low-emission zone that lowers exposure on the blocks you meant to help.</p>
+        <div class="next">
+          <span class="h mono">Where I am taking it</span>
+          <ul>
+            <li><p><b>Physics-informed fusion of environmental data.</b> Models that couple physical constraints with flexible statistical learning, so satellites, aircraft, mobile monitors and fixed networks can be combined without pretending they measure the same thing. I want to be able to say how much an aircraft profile sharpens a satellite retrieval over an urban heat island, or where a ground monitor corrects a remote-sensing bias. The output should carry its own uncertainty, so it can go into an exposure or siting analysis without laundering the error.</p></li>
+            <li><p><b>Decision-theoretic measurement networks.</b> Bayesian experimental design, using mutual information and cross-platform covariance, to decide where and when to measure next. Most campaigns optimize for coverage. I would rather optimize for a question: capturing a wildfire smoke episode, characterizing near-road exposure along a proposed transit line, or pinning down long-term exposure in a community that has been undersampled for decades.</p></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="thrust rise">
+      <div class="thrust-key">
+        <span class="verb">Attribute</span>
+        <span class="idx mono">§02.2</span>
+      </div>
+      <div>
+        <h3>Toward an urban pollution digital twin</h3>
+        <p>A concentration map tells you where pollution ends up. It does not tell you who put it there. High-resolution maps make good diagnostics, but policy needs the attribution step.</p>
+        <p>I extended Bayesian inversion down to roughly 150 meters, fine enough to attribute emissions to a particular corridor, facility or neighborhood. What comes out is an emission estimate grounded in observations rather than in a bottom-up inventory. Couple that with a transport model and you can test an intervention before committing to it: rerouting freight, modernizing port operations, tightening controls at one specific facility. You also see how each option redistributes exposure, which matters, because the aggregate improvement and the distributional outcome are frequently not the same story.</p>
+        <p>The obstacle is cost. Inverse modeling leans on chemical transport models that need repeated case-specific simulations, which rules out large ensembles, real-time use, or tight coupling with an optimizer. Reduced-complexity models and unconstrained machine learning surrogates are cheaper but tend to give up physical interpretability and robustness across regimes.</p>
+        <div class="next">
+          <span class="h mono">Where I am taking it</span>
+          <ul>
+            <li><p><b>Atmospheric transport emulators.</b> Forward neural operators that map emissions to concentrations, with mass balance, continuity and non-negativity built into the architecture instead of hoped for. Multi-scale encoders let one model hold a neighborhood gradient and a regional background at the same time, on limited training data.</p></li>
+            <li><p><b>Real-time emissions mapping.</b> Automatic differentiation makes inversion nearly instantaneous by removing the adjoint and Jacobian calculations that dominate the cost today. That changes what the tool is for. Testing scenarios during an active pollution episode becomes an afternoon's work instead of a study.</p></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="thrust rise">
+      <div class="thrust-key">
+        <span class="verb">Design</span>
+        <span class="idx mono">§02.3</span>
+      </div>
+      <div>
+        <h3>Reverse-engineering environmental policy</h3>
+        <p>Environmental policy is usually designed forwards. Propose a strategy, model the outcome, adjust, repeat. I am interested in running the loop the other way: start from the air quality and climate target, then solve for the ways to reach it.</p>
+        <p>During my Ph.D. I adapted inverse modeling to search across combinations of emissions reductions, spanning space, sector and chemical precursor, for the ones that meet air quality and climate goals together. Writing equity in as a constraint, instead of scoring it after the plan is drafted, changes which plans win. In California the model favored a set of targeted low-emission zones over broad regional cuts, and got more exposure reduction and less disparity out of them by exploiting how transport and chemistry interact. The limitation is that these models hold the world still. They cannot see how social and economic systems adapt once a policy is actually enacted.</p>
+        <div class="next">
+          <span class="h mono">Where I am taking it</span>
+          <ul>
+            <li><p><b>Generative models for policy discovery.</b> An optimizer returns one plan and hides the alternatives. I want to sample the space of plans that clear the same air quality bar, so a city can see that bus electrification, targeted freight restrictions and building retrofits all get there, at different costs and with different people benefiting.</p></li>
+            <li><p><b>Resilient policy design.</b> Coupling policy discovery with agent-based models of how households, firms and utilities respond to incentives. An EV subsidy can shift charging into the evening and lean harder on peaker plants near the communities it was meant to help. A design that ignores adaptation starts degrading the moment it is enacted.</p></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div style="margin-top:clamp(34px,4vw,52px)">
+      <p class="mono blk-lab">Positions</p>
+      <div class="appt">
+        <span class="yr mono">2026 &ndash; now</span>
+        <div>
+          <h4>Stanford University</h4>
+          <p class="role">Postdoctoral Scholar, ECHO Lab, Doerr School of Sustainability</p>
+          <p>Environmental Social Sciences, with Marshall Burke. Extending measurement and model fusion and policy optimization to climate-amplified environmental hazards and human outcomes.</p>
+        </div>
+      </div>
+      <div class="appt">
+        <span class="yr mono">2021 &ndash; 2026</span>
+        <div>
+          <h4>University of California, Berkeley</h4>
+          <p class="role">Graduate Student Researcher, Apte Research Group</p>
+          <p>Data assimilation and inverse modeling frameworks for optimizing urban air quality, climate and equity outcomes.</p>
+        </div>
+      </div>
+      <div class="appt">
+        <span class="yr mono">2018 &ndash; 2021</span>
+        <div>
+          <h4>Indian Institute of Technology Delhi</h4>
+          <p class="role">Research Associate, Air Quality Research Group</p>
+          <p>Led field measurement campaigns and source apportionment analyses characterizing chemical variability in PM<sub>2.5</sub> during festival fireworks and the COVID-19 lockdown, alongside on-road exposure work across Delhi.</p>
+        </div>
+      </div>
+      <div class="appt">
+        <span class="yr mono">2018</span>
+        <div>
+          <h4>Nanyang Technological University, Singapore</h4>
+          <p class="role">NTU&ndash;India Connect Research Scholar</p>
+          <p>Computational and experimental models for non-invasive detection of carotid artery stenosis using thermal imaging and flow diagnostics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lit" id="publications">
+  <div class="wrap pad">
+    <div class="sec-head rise">
+      <span class="sec-num">§03</span>
+      <h2>Publications &amp; patents</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Journal articles</p>
+
+      <div class="pub">
+        <span class="n">01</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span><sup>*</sup>, L. Koolik<sup>*</sup>, A. Ünal, I. Fung, J. Marshall, R. Morello-Frosch, A. Turner, R. Harley, and J. Apte. Inverse modeling identifies efficient emission control strategy for mitigating PM<sub>2.5</sub> pollution. <span class="jr">Environmental Science &amp; Technology</span>.</p>
+          <div class="pub-meta"><span class="status">In review</span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">02</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, L. Koolik, A. Ünal, R. Harley, J. Marshall, and J. Apte. Deconstructing the distributional impacts of air pollution controls. <span class="jr">Environmental Science &amp; Technology</span>.</p>
+          <div class="pub-meta"><span class="status">In review</span></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">03</span>
+        <div>
+          <p class="cite">L. Koolik<sup>*</sup>, <span class="me">C. Manchanda</span><sup>*</sup>, A. Ünal, I. Fung, J. Marshall, R. Morello-Frosch, A. Turner, R. Harley, and J. Apte. Modeling optimal pathways to a triple win in air quality, climate, and equity.</p>
+          <div class="pub-meta">
+            <span class="status">In submission</span>
+            <a class="doi" href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Preprint ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">04</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, R. Cohen, R. Alvarez, T. Thompson, M. Harris, A. Turner, J. Marshall, R. Harley, and J. Apte. Hyperlocal sensing and inversion reveal community impacts of urban air pollutant emissions. <span class="jr">Science Advances</span>.</p>
+          <div class="pub-meta">
+            <span class="status">In revision</span>
+            <a class="doi" href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Preprint ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">05</span>
+        <div>
+          <p class="cite">J. Apte and <span class="me">C. Manchanda</span>. High-resolution urban air pollution mapping. <span class="jr">Science</span>, 385, 380&ndash;385, 2024.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1126/science.adq3678">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">06</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, R. Harley, J. Marshall, A. Turner, and J. Apte. Integrating mobile and fixed-site black carbon measurements to bridge spatiotemporal gaps in urban air quality. <span class="jr">Environmental Science &amp; Technology</span>, 58, 12563&ndash;12574, 2024.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1021/acs.est.3c10829">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">07</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, M. Kumar, V. Singh, N. Hazarika, M. Faisal, V. Lalchandani, A. Shukla, J. Dave, N. Rastogi, and S. N. Tripathi. Chemical speciation and source apportionment of ambient PM<sub>2.5</sub> in New Delhi before, during, and after the Diwali fireworks. <span class="jr">Atmospheric Pollution Research</span>, 13, 101428, 2022.</p>
+          <div class="pub-meta">
+            <a class="doi" href="https://doi.org/10.1016/j.apr.2022.101428">DOI ↗</a>
+            <span class="status cool">Press coverage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">08</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, M. Kumar, and V. Singh. Meteorology governs the variation of Delhi's high particulate-bound chloride levels. <span class="jr">Chemosphere</span>, 291, 132879, 2021.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1016/j.chemosphere.2021.132879">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">09</span>
+        <div>
+          <p class="cite"><span class="me">C. Manchanda</span>, M. Kumar, V. Singh, M. Faisal, N. Hazarika, A. Shukla, V. Lalchandani, V. Goel, N. Thamban, D. Ganguly, and S. N. Tripathi. Variation in chemical composition and sources of PM<sub>2.5</sub> during the COVID-19 lockdown in Delhi. <span class="jr">Environment International</span>, 153, 106541, 2021.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1016/j.envint.2021.106541">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">10</span>
+        <div>
+          <p class="cite">A. Saxena, E. Ng, <span class="me">C. Manchanda</span>, and T. Canchi. Cardiac thermal pulse at the neck-skin surface as a measure of stenosis in the carotid artery. <span class="jr">Thermal Science and Engineering Progress</span>, 19, 100603, 2020.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1016/j.tsep.2020.100603">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <span class="n">11</span>
+        <div>
+          <p class="cite">A. Saxena, E. Ng, M. Mathur, <span class="me">C. Manchanda</span>, and N. Jajal. Effect of carotid artery stenosis on neck skin tissue heat transfer. <span class="jr">International Journal of Thermal Sciences</span>, 145, 106010, 2019.</p>
+          <div class="pub-meta"><a class="doi" href="https://doi.org/10.1016/j.ijthermalsci.2019.106010">DOI ↗</a></div>
+        </div>
+      </div>
+
+      <p class="fn"><sup>*</sup> Co-first authorship. Current list on <a href="https://scholar.google.com/citations?user=gmq8-rAAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0001-7492-9208">ORCID</a>.</p>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Patents</p>
+      <div class="patent">
+        <span class="n">01</span>
+        <div>
+          <p class="cite">J. Apte, R. Harley, <span class="me">C. Manchanda</span>, L. Koolik, and J. Marshall. Systems, methods, and program products for reducing air pollution for one or more pollutants in a locality.</p>
+          <p class="no">U.S. Provisional Application 63/877,812, filed 8 September 2025</p>
+        </div>
+      </div>
+      <div class="patent">
+        <span class="n">02</span>
+        <div>
+          <p class="cite">J. Apte, R. Harley, <span class="me">C. Manchanda</span>, J. Marshall, and A. Turner. Systems, methods, and program products for detecting emissions of an airborne pollutant on a hyperlocal scale.</p>
+          <p class="no">U.S. Provisional Application 63/864,040, filed 14 August 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lit" id="talks">
+  <div class="wrap pad">
+    <div class="sec-head rise">
+      <span class="sec-num">§04</span>
+      <h2>Invited talks &amp; presentations</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="rows rise">
+      <div class="row">
+        <span class="yr mono">May 2026</span>
+        <span class="what"><span class="q">Planning-oriented receptor modeling: apportioning emissions reductions required for PM<sub>2.5</sub> attainment</span><span class="fmt">Highlight talk</span></span>
+        <span class="org">European Geosciences Union, Vienna</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Aug 2025</span>
+        <span class="what"><span class="q">High-resolution inverse modeling of urban air pollution emissions using multi-platform observations</span><span class="fmt">Talk + poster</span></span>
+        <span class="org">Gordon Research Seminar &amp; Conference in Atmospheric Chemistry, Newry, ME</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Aug 2025</span>
+        <span class="what"><span class="q">INFE²R what drives urban pollution: hyperlocal sensing and inverse modeling</span><span class="fmt">Invited seminar</span></span>
+        <span class="org">MIT, Department of Urban Studies and Planning</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">May 2025</span>
+        <span class="what"><span class="q">High-resolution urban emission mapping: bridging gaps between inventories and hyperlocal observations</span><span class="fmt">Talk + poster</span></span>
+        <span class="org">Health Effects Institute Annual Meeting, Austin, TX</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Apr 2025</span>
+        <span class="what"><span class="q">Connecting urban black carbon emissions and measured concentrations: a fusion of hyperlocal monitoring and Bayesian techniques</span><span class="fmt">Invited talk</span></span>
+        <span class="org">European Geosciences Union, Vienna</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Mar 2025</span>
+        <span class="what"><span class="q">INFE²R what drives urban pollution: hyperlocal sensing and inverse modeling</span><span class="fmt">Invited seminar</span></span>
+        <span class="org">Stanford University, Department of Earth System Science</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Aug 2024</span>
+        <span class="what"><span class="q">Enhancing exposure estimates in urban environments: integrating mobile and fixed-site black carbon measurements</span><span class="fmt">Talk</span></span>
+        <span class="org">International Society for Environmental Epidemiology, Santiago</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Apr 2024</span>
+        <span class="what"><span class="q">Refining urban exposure estimates: a modeling approach melding mobile and fixed-site observations</span><span class="fmt">Poster</span></span>
+        <span class="org">Health Effects Institute Annual Meeting, Philadelphia</span>
+      </div>
+      <div class="row">
+        <span class="yr mono">Dec 2023</span>
+        <span class="what"><span class="q">Spatiotemporal modeling of black carbon concentrations: combining mobile and fixed-site measurements with tailored compressive sensing</span><span class="fmt">Poster</span></span>
+        <span class="org">American Geophysical Union, San Francisco</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lit" id="cv">
+  <div class="wrap pad">
+    <div class="sec-head rise">
+      <span class="sec-num">§05</span>
+      <h2>Curriculum vitae</h2>
+      <span class="rule"></span>
+    </div>
+
+    <div class="cv-top rise">
+      <a class="chip solid" href="files/Chirag_Manchanda_CV.pdf">Download CV (PDF) ↓</a>
+      <p>Education, honors, teaching, service and mentoring in summary. The PDF has the complete record.</p>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Education</p>
+      <div class="edu">
+        <div class="edu-item">
+          <span class="yr mono">2021 &ndash; 2026</span>
+          <h4>Ph.D., Environmental Engineering</h4>
+          <p>University of California, Berkeley<br>Advisors: Joshua S. Apte, Robert A. Harley<br>Conferred August 2026</p>
+          <span class="gpa">GPA 4.0 / 4.0</span>
+        </div>
+        <div class="edu-item">
+          <span class="yr mono">2021 &ndash; 2022</span>
+          <h4>M.S., Civil &amp; Environmental Engineering</h4>
+          <p>University of California, Berkeley</p>
+          <span class="gpa">GPA 4.0 / 4.0</span>
+        </div>
+        <div class="edu-item">
+          <span class="yr mono">2014 &ndash; 2018</span>
+          <h4>B.Tech., Mechanical Engineering</h4>
+          <p>Manipal Institute of Technology, Manipal University<br>Karnataka, India</p>
+          <span class="gpa">GPA 9.82 / 10.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Scholarships &amp; awards</p>
+      <div class="rows">
+        <div class="row"><span class="yr mono">2025</span><span class="what"><b>Jane Warren Award</b></span><span class="org">Health Effects Institute</span></div>
+        <div class="row"><span class="yr mono">2025</span><span class="what"><b>JN Tata Gift Award</b></span><span class="org">Tata Education and Development Trust</span></div>
+        <div class="row"><span class="yr mono">2024</span><span class="what"><b>Outstanding Graduate Student Instructor Award</b></span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">2023</span><span class="what"><b>STEM*FYI Graduate Diversity Fellow</b></span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">2018</span><span class="what"><b>Founder's Gold Medal</b> for the Best Outgoing Student</span><span class="org">Manipal University</span></div>
+        <div class="row"><span class="yr mono">2017</span><span class="what"><b>Summer Undergraduate Research Grant for Excellence</b></span><span class="org">Indian Institute of Technology Delhi</span></div>
+        <div class="row"><span class="yr mono">2015</span><span class="what"><b>GE Foundation Scholar Leader</b></span><span class="org">General Electric Foundation</span></div>
+        <div class="row"><span class="yr mono">2015</span><span class="what"><b>Avery Dennison InvEnt Scholar</b></span><span class="org">Avery Dennison Foundation</span></div>
+        <div class="row"><span class="yr mono">2014 &ndash; 2018</span><span class="what"><span class="mult">4×</span><b>Annual Academic Excellence Award</b></span><span class="org">Manipal University</span></div>
+      </div>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Teaching</p>
+      <div class="rows">
+        <div class="row"><span class="yr mono">2024 &ndash; 2026</span><span class="what"><b>Engineering Cluster Leader</b>, First-time Graduate Student Instructor Teaching Conference</span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">Fall 2023</span><span class="what"><b>Graduate Student Instructor</b>, Air Quality Engineering (CE 218A)</span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">Fall 2017</span><span class="what"><b>Teaching Assistant</b>, Applied Thermodynamics (MME 2201)</span><span class="org">Manipal University</span></div>
+        <div class="row"><span class="yr mono">Spring 2017</span><span class="what"><b>Teaching Assistant</b>, Computer-Aided Mechanical Drawing (MME 2216)</span><span class="org">Manipal University</span></div>
+      </div>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Service</p>
+      <div class="rows">
+        <div class="row"><span class="yr mono">2024 &ndash; 2026</span><span class="what"><b>Peer Reviewer</b>, Environmental Science &amp; Technology and ES&amp;T Air</span><span class="org">American Chemical Society</span></div>
+        <div class="row"><span class="yr mono">2025 &ndash; 2026</span><span class="what"><b>Student Committee Chair</b>, CEE Faculty Search</span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">2023</span><span class="what"><b>Student Representative</b>, Environmental Engineering Graduate Admissions Committee</span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">2023</span><span class="what"><b>Student Coordinator</b>, Environmental Engineering Seminar Series</span><span class="org">UC Berkeley</span></div>
+        <div class="row"><span class="yr mono">2022 &ndash; 2025</span><span class="what"><b>Community Outreach Volunteer</b>, public engagement on wildfire smoke impacts and air filtration</span><span class="org">San Francisco Bay Area</span></div>
+      </div>
+    </div>
+
+    <div class="blk rise">
+      <p class="mono blk-lab">Mentoring</p>
+      <div class="mentee">
+        <h4>Himanshu Patanwala <span class="yr mono">2019 &ndash; 2020</span></h4>
+        <p>Undergraduate research mentee at IIT Delhi, on CFD modeling of coal gasification. Went on to graduate study at RWTH Aachen.</p>
+      </div>
+      <div class="mentee">
+        <h4>Priyam Sodhiya <span class="yr mono">2019 &ndash; 2020</span></h4>
+        <p>B.Tech. thesis mentee at IIT Delhi, on on-road PM<sub>2.5</sub> exposures in New Delhi. Now Head of Marketing at Zenskar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<aside class="epi">
+  <div class="wrap pad">
+    <p class="mono lab rise">Things I keep coming back to</p>
+    <div class="quotes">
+      <div class="q rise">
+        <blockquote>Research is to see what everybody else has seen and to think what nobody else has thought.</blockquote>
+        <cite>Albert Szent-Györgyi</cite>
+      </div>
+      <div class="q rise">
+        <blockquote>If you can't explain it simply, you don't understand it well enough.</blockquote>
+        <cite>Albert Einstein</cite>
+      </div>
+      <div class="q rise">
+        <blockquote>When something is important enough, you do it even if the odds are not in your favor.</blockquote>
+        <cite>Elon Musk</cite>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<footer id="contact">
+  <div class="wrap pad">
+    <div class="foot-grid">
+      <div>
+        <h2 class="foot-h">Get in touch</h2>
+        <p>Happy to talk about measurement and model fusion, hyperlocal monitoring campaigns, inverse modeling, or exposure equity.</p>
+        <div class="mails">
+          <a href="mailto:chiragmc@stanford.edu">chiragmc@stanford.edu</a>
+          <a class="alt" href="mailto:chiragm@berkeley.edu">chiragm@berkeley.edu · Berkeley alumni address</a>
+        </div>
+      </div>
+      <div class="foot-links">
+        <a href="files/Chirag_Manchanda_CV.pdf">Curriculum vitae<span>↓</span></a>
+        <a href="https://scholar.google.com/citations?user=gmq8-rAAAAAJ&amp;hl=en">Google Scholar<span>↗</span></a>
+        <a href="https://orcid.org/0000-0001-7492-9208">ORCID<span>↗</span></a>
+        <a href="https://www.researchgate.net/profile/Chirag-Manchanda">ResearchGate<span>↗</span></a>
+        <a href="https://profiles.stanford.edu/chirag-manchanda">Stanford Profile<span>↗</span></a>
+        <a href="https://www.stanfordecholab.com/">ECHO Lab<span>↗</span></a>
+      </div>
+    </div>
+    <div class="colophon">
+      <span class="mono">Chirag Manchanda · Stanford University</span>
+      <span class="mono">Updated August 2026</span>
+      <p class="mono credits">Built without a framework or theme. Set in three typefaces released under the
+        <a href="https://openfontlicense.org/">SIL Open Font License</a>:
+        <a href="https://fonts.google.com/specimen/Archivo">Archivo</a> by Omnibus-Type,
+        <a href="https://fonts.google.com/specimen/Spectral">Spectral</a> by Production Type, and
+        <a href="https://fonts.google.com/specimen/IBM+Plex+Mono">IBM Plex Mono</a> by IBM, served from Google Fonts.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rise = Array.prototype.slice.call(document.querySelectorAll('.rise'));
+
+  if(reduce || !('IntersectionObserver' in window)){
+    rise.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.filter(function(e){ return e.isIntersecting; })
+        .sort(function(a,b){ return a.boundingClientRect.top - b.boundingClientRect.top; })
+        .forEach(function(e,i){
+          setTimeout(function(){ e.target.classList.add('in'); }, i*70);
+          io.unobserve(e.target);
+        });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
+    rise.forEach(function(el){ io.observe(el); });
+  }
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  if('IntersectionObserver' in window){
+    var ratio = {};
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ ratio[e.target.id] = e.isIntersecting ? e.intersectionRatio : 0; });
+      var best = null, bestV = 0;
+      Object.keys(ratio).forEach(function(id){ if(ratio[id] > bestV){ bestV = ratio[id]; best = id; } });
+      links.forEach(function(a){
+        a.classList.toggle('here', best !== null && a.getAttribute('href') === '#' + best);
+      });
+    }, {threshold:[0,0.12,0.3,0.6], rootMargin:'-52px 0px -45% 0px'});
+    links.forEach(function(a){
+      var t = document.querySelector(a.getAttribute('href'));
+      if(t) spy.observe(t);
+    });
+  }
+})();
+</script>
+</body>
+</html>

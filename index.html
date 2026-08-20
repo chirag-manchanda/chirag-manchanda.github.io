@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chirag Manchanda — Stanford University</title>
+  <title>Chirag Manchanda</title>
   <meta name="description" content="Chirag Manchanda is an environmental engineer at Stanford University working on air pollution measurement, inverse modeling, and emissions control.">
   <link rel="canonical" href="https://chirag-manchanda.github.io/">
 
@@ -406,6 +406,12 @@
       font-weight: 600;
       line-height: 1;
       letter-spacing: -.055em;
+    }
+
+    .metric:nth-child(3) .metric-value {
+      font-size: clamp(1.85rem, 3.4vw, 3rem);
+      line-height: 1.04;
+      letter-spacing: -.045em;
     }
 
     .metric-label {
@@ -848,6 +854,10 @@
         grid-template-columns: 1fr;
       }
 
+      .research-section .section-grid {
+        grid-template-columns: 1fr;
+      }
+
       .section-title { position: static; }
 
       .portrait-wrap {
@@ -866,9 +876,29 @@
         grid-template-columns: 1fr;
       }
 
+      .research-cards {
+        gap: 16px;
+        margin-top: 28px;
+      }
+
       .metric { min-height: 220px; }
-      .research-card { min-height: auto; }
-      .research-number { margin-bottom: 36px; }
+
+      .research-card {
+        min-height: auto;
+        width: 100%;
+        padding: 28px 24px 26px;
+      }
+
+      .research-card h3 {
+        max-width: none;
+        font-size: 1.45rem;
+      }
+
+      .research-card p {
+        font-size: .98rem;
+      }
+
+      .research-number { margin-bottom: 30px; }
 
       .facts { grid-template-columns: 1fr; }
       .fact + .fact {
@@ -881,6 +911,8 @@
     }
 
     @media (max-width: 620px) {
+      :root { --pad: 18px; }
+
       body { font-size: 17px; }
 
       .brand-name {
@@ -933,6 +965,14 @@
         gap: 12px;
       }
 
+      .research-card {
+        padding: 25px 20px 23px;
+      }
+
+      .research-card .now {
+        margin-top: 18px;
+      }
+
       .button {
         min-height: 40px;
       }
@@ -974,8 +1014,8 @@
 
           <div class="hero-actions" aria-label="Profile links">
             <a class="button primary" href="files/Chirag_Manchanda_CV.pdf">Curriculum vitae ↓</a>
-            <a class="button" href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗</a>
-            <a class="button" href="https://orcid.org/0000-0001-7492-9208">ORCID ↗</a>
+            <a class="button" href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗︎</a>
+            <a class="button" href="https://orcid.org/0000-0001-7492-9208">ORCID ↗︎</a>
           </div>
         </div>
 
@@ -1016,7 +1056,7 @@
         <div class="highlights-head">
           <h2 id="highlights-title">A few results from my Ph.D.</h2>
           <p>
-            My dissertation moved from reconstructing urban pollution, to estimating the emissions behind it, to testing how those emissions could be reduced.
+            My dissertation moved from reconstructing urban pollution, to estimating the emissions behind it, to using those same inverse methods to design efficient emission-control strategies.
           </p>
         </div>
 
@@ -1028,7 +1068,7 @@
             <p>
               Google Street View measurements and fixed sensors combined into high-resolution urban black-carbon fields using compressive sensing.
             </p>
-            <a href="https://doi.org/10.1021/acs.est.3c10829">ES&amp;T 2024 ↗</a>
+            <a href="https://doi.org/10.1021/acs.est.3c10829">ES&amp;T 2024 ↗︎</a>
           </article>
 
           <article class="metric">
@@ -1038,17 +1078,17 @@
             <p>
               Bayesian inversion used observed concentration patterns to update emissions and evaluate localized interventions such as freight rerouting.
             </p>
-            <a href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Preprint ↗</a>
+            <a href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Preprint ↗︎</a>
           </article>
 
           <article class="metric">
-            <div class="metric-value">3</div>
-            <div class="metric-label">Objectives in one optimization</div>
-            <h3>Air quality, climate, and exposure disparity</h3>
+            <div class="metric-value">Inverse → Design</div>
+            <div class="metric-label">Repurposing inverse modeling for control</div>
+            <h3>Finding efficient pathways to multiple policy goals</h3>
             <p>
-              A policy optimization framework compares targeted and regional emission reductions while accounting for all three objectives.
+              Instead of using inverse modeling only to infer emissions from observations, we use the same framework in reverse to identify emission-control strategies that meet air-quality, climate, and equity objectives while minimizing cumulative emissions reductions or costs.
             </p>
-            <a href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Preprint ↗</a>
+            <a href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Preprint ↗︎</a>
           </article>
         </div>
       </div>
@@ -1177,7 +1217,7 @@
                   <p class="pub-citation"><strong>C. Manchanda</strong>, L. Koolik, A. Ünal, R. Harley, J. Marshall, and J. Apte. Deconstructing the distributional impacts of air pollution controls. <em>Environmental Science &amp; Technology.</em></p>
                   <div class="pub-meta">
                     <span class="pub-status">In review</span>
-                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv.15006365/v1">Preprint ↗</a>
+                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv.15006365/v1">Preprint ↗︎</a>
                   </div>
                 </div>
               </article>
@@ -1188,7 +1228,7 @@
                   <p class="pub-citation">L. Koolik<sup>*</sup>, <strong>C. Manchanda<sup>*</sup></strong>, A. Ünal, I. Fung, J. Marshall, R. Morello-Frosch, A. Turner, R. Harley, and J. Apte. Modeling optimal pathways to a triple win in air quality, climate, and equity.</p>
                   <div class="pub-meta">
                     <span class="pub-status">In submission</span>
-                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Preprint ↗</a>
+                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv-2025-c6sn4">Preprint ↗︎</a>
                   </div>
                 </div>
               </article>
@@ -1199,7 +1239,7 @@
                   <p class="pub-citation"><strong>C. Manchanda</strong>, R. Cohen, R. Alvarez, T. Thompson, M. Harris, A. Turner, J. Marshall, R. Harley, and J. Apte. Hyperlocal sensing and inversion reveal community impacts of urban air pollutant emissions. <em>Science Advances.</em></p>
                   <div class="pub-meta">
                     <span class="pub-status">In revision</span>
-                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Preprint ↗</a>
+                    <a class="pub-link" href="https://doi.org/10.26434/chemrxiv-2025-zt4zh">Preprint ↗︎</a>
                   </div>
                 </div>
               </article>
@@ -1208,7 +1248,7 @@
                 <div class="pub-number">05</div>
                 <div>
                   <p class="pub-citation">J. Apte and <strong>C. Manchanda</strong>. High-resolution urban air pollution mapping. <em>Science</em>, 385, 380–385, 2024.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1126/science.adq3678">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1126/science.adq3678">DOI ↗︎</a></div>
                 </div>
               </article>
 
@@ -1216,7 +1256,7 @@
                 <div class="pub-number">06</div>
                 <div>
                   <p class="pub-citation"><strong>C. Manchanda</strong>, R. Harley, J. Marshall, A. Turner, and J. Apte. Integrating mobile and fixed-site black carbon measurements to bridge spatiotemporal gaps in urban air quality. <em>Environmental Science &amp; Technology</em>, 58, 12563–12574, 2024.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1021/acs.est.3c10829">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1021/acs.est.3c10829">DOI ↗︎</a></div>
                 </div>
               </article>
 
@@ -1225,7 +1265,7 @@
                 <div>
                   <p class="pub-citation"><strong>C. Manchanda</strong>, M. Kumar, V. Singh, N. Hazarika, M. Faisal, V. Lalchandani, A. Shukla, J. Dave, N. Rastogi, and S. N. Tripathi. Chemical speciation and source apportionment of ambient PM<sub>2.5</sub> in New Delhi before, during, and after the Diwali fireworks. <em>Atmospheric Pollution Research</em>, 13, 101428, 2022.</p>
                   <div class="pub-meta">
-                    <a class="pub-link" href="https://doi.org/10.1016/j.apr.2022.101428">DOI ↗</a>
+                    <a class="pub-link" href="https://doi.org/10.1016/j.apr.2022.101428">DOI ↗︎</a>
                     <span>Press coverage</span>
                   </div>
                 </div>
@@ -1235,7 +1275,7 @@
                 <div class="pub-number">08</div>
                 <div>
                   <p class="pub-citation"><strong>C. Manchanda</strong>, M. Kumar, and V. Singh. Meteorology governs the variation of Delhi's high particulate-bound chloride levels. <em>Chemosphere</em>, 291, 132879, 2021.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.chemosphere.2021.132879">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.chemosphere.2021.132879">DOI ↗︎</a></div>
                 </div>
               </article>
 
@@ -1243,7 +1283,7 @@
                 <div class="pub-number">09</div>
                 <div>
                   <p class="pub-citation"><strong>C. Manchanda</strong>, M. Kumar, V. Singh, M. Faisal, N. Hazarika, A. Shukla, V. Lalchandani, V. Goel, N. Thamban, D. Ganguly, and S. N. Tripathi. Variation in chemical composition and sources of PM<sub>2.5</sub> during the COVID-19 lockdown in Delhi. <em>Environment International</em>, 153, 106541, 2021.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.envint.2021.106541">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.envint.2021.106541">DOI ↗︎</a></div>
                 </div>
               </article>
 
@@ -1251,7 +1291,7 @@
                 <div class="pub-number">10</div>
                 <div>
                   <p class="pub-citation">A. Saxena, E. Ng, <strong>C. Manchanda</strong>, and T. Canchi. Cardiac thermal pulse at the neck-skin surface as a measure of stenosis in the carotid artery. <em>Thermal Science and Engineering Progress</em>, 19, 100603, 2020.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.tsep.2020.100603">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.tsep.2020.100603">DOI ↗︎</a></div>
                 </div>
               </article>
 
@@ -1259,12 +1299,12 @@
                 <div class="pub-number">11</div>
                 <div>
                   <p class="pub-citation">A. Saxena, E. Ng, M. Mathur, <strong>C. Manchanda</strong>, and N. Jajal. Effect of carotid artery stenosis on neck skin tissue heat transfer. <em>International Journal of Thermal Sciences</em>, 145, 106010, 2019.</p>
-                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.ijthermalsci.2019.106010">DOI ↗</a></div>
+                  <div class="pub-meta"><a class="pub-link" href="https://doi.org/10.1016/j.ijthermalsci.2019.106010">DOI ↗︎</a></div>
                 </div>
               </article>
             </div>
 
-            <p class="pub-note"><sup>*</sup> Co-first authorship. Current list on <a class="pub-link" href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗</a> and <a class="pub-link" href="https://orcid.org/0000-0001-7492-9208">ORCID ↗</a>.</p>
+            <p class="pub-note"><sup>*</sup> Co-first authorship. Current list on <a class="pub-link" href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗︎</a> and <a class="pub-link" href="https://orcid.org/0000-0001-7492-9208">ORCID ↗︎</a>.</p>
           </div>
 
           <div class="publication-group">
@@ -1355,10 +1395,10 @@
 
           <div class="footer-links">
             <a href="files/Chirag_Manchanda_CV.pdf">CV ↓</a>
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗</a>
-            <a href="https://orcid.org/0000-0001-7492-9208">ORCID ↗</a>
-            <a href="https://profiles.stanford.edu/">Stanford ↗</a>
-            <a href="https://www.stanfordecholab.com/">ECHO Lab ↗</a>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=gmq8-rAAAAAJ">Google Scholar ↗︎</a>
+            <a href="https://orcid.org/0000-0001-7492-9208">ORCID ↗︎</a>
+            <a href="https://profiles.stanford.edu/">Stanford ↗︎</a>
+            <a href="https://www.stanfordecholab.com/">ECHO Lab ↗︎</a>
           </div>
         </div>
       </div>

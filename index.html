@@ -21,16 +21,30 @@
 
   <style>
     :root {
-      --paper: #f3f1ea;
-      --paper-2: #e9e6de;
-      --ink: #1c1f1b;
-      --muted: #646a62;
-      --line: #d2cec5;
-      --teal: #2e4036;
-      --teal-soft: #dfe8e3;
-      --rust: #7fafa4;
-      --rust-soft: #e9e6de;
-      --cream: #f3f1ea;
+      /* Mineral Forest: cool chalk + deep forest + mineral teal + restrained brass.
+         Warm accents are intentionally sparse so the site stays crisp rather than earthy. */
+      --paper: #f6f7f4;
+      --paper-2: #ffffff;
+      --ink: #17201d;
+      --muted: #5d6762;
+      --line: #d5dcd7;
+
+      --navy: #18352e;        /* deepest structural green */
+      --blue: #397a78;        /* mineral teal: links, labels, small UI */
+      --blue-soft: #dce9e5;   /* pale mineral tint */
+      --olive: #d1a12d;       /* brass: decorative only */
+      --olive-soft: #f2ecd8;  /* pale brass wash, used sparingly */
+      --coral: #82621b;       /* dark ochre: accessible warm text accent */
+      --forest: #23483f;      /* primary forest */
+      --forest-soft: #e9edea; /* alternate neutral surface */
+
+      /* Legacy aliases retained so the rest of the stylesheet stays compact. */
+      --teal: var(--forest);
+      --teal-soft: var(--blue-soft);
+      --rust: var(--blue);
+      --rust-soft: var(--forest-soft);
+      --cream: #f6f7f4;
+
       --max: 1180px;
       --pad: clamp(22px, 5vw, 64px);
     }
@@ -77,9 +91,9 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(243, 241, 234, 0.94);
+      background: rgba(246, 247, 244, 0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(23, 26, 25, .12);
+      border-bottom: 1px solid rgba(24, 53, 46, .12);
     }
 
     .nav-inner {
@@ -101,7 +115,7 @@
     }
 
     .brand-mark {
-      color: var(--rust);
+      color: var(--navy);
       font-family: "Archivo", Arial, sans-serif;
       font-size: 15px;
       font-weight: 700;
@@ -129,7 +143,7 @@
 
     .nav-links a:hover,
     .nav-links a:focus-visible {
-      color: var(--rust);
+      color: var(--blue);
     }
 
     /* HERO */
@@ -147,7 +161,7 @@
       top: 0;
       width: clamp(8px, 1.2vw, 16px);
       height: 100%;
-      background: var(--teal);
+      background: var(--navy);
     }
 
     .hero-grid {
@@ -160,7 +174,7 @@
 
     .eyebrow {
       margin: 0 0 18px;
-      color: var(--teal);
+      color: var(--blue);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: .09em;
@@ -220,8 +234,8 @@
     }
 
     .button.primary {
-      background: var(--teal);
-      border-color: var(--teal);
+      background: var(--navy);
+      border-color: var(--navy);
       color: var(--paper-2);
     }
 
@@ -248,7 +262,7 @@
       height: 92%;
       right: -16px;
       bottom: -18px;
-      background: var(--teal);
+      background: var(--forest);
     }
 
     .portrait-wrap::after {
@@ -258,8 +272,8 @@
       height: 72px;
       left: -20px;
       top: -20px;
-      border-top: 7px solid #c49844;
-      border-left: 7px solid #c49844;
+      border-top: 7px solid var(--olive);
+      border-left: 7px solid var(--olive);
     }
 
     .headshot {
@@ -277,7 +291,7 @@
       margin: 18px 0 0 18px;
       background: var(--paper-2);
       border: 1px solid var(--line);
-      border-left: 4px solid var(--teal);
+      border-left: 4px solid var(--blue);
     }
 
     .credential-row {
@@ -304,7 +318,7 @@
     .credential-value {
       font-size: .88rem;
       line-height: 1.42;
-      color: #3b403b;
+      color: #3b4842;
     }
 
     .credential-value strong {
@@ -349,12 +363,14 @@
     }
 
     .track-item:last-child { border-right: 0; }
-    .track-item span { color: var(--rust); margin-right: 8px; }
+    .track-item span { color: var(--blue); margin-right: 8px; }
+    .track-item:nth-child(3) span { color: var(--forest); }
+    .track-item:nth-child(4) span { color: var(--olive); }
 
     /* DISSERTATION HIGHLIGHTS */
     .highlights {
       padding: clamp(64px, 8vw, 94px) 0;
-      background: var(--teal);
+      background: var(--navy);
       color: var(--cream);
     }
 
@@ -376,7 +392,7 @@
 
     .highlights-head p {
       margin: 0;
-      color: rgba(243,241,234,.76);
+      color: rgba(246,247,244,.78);
       max-width: 620px;
     }
 
@@ -391,13 +407,13 @@
       padding: 28px 27px 25px;
       background: var(--paper-2);
       color: var(--ink);
-      border-top: 5px solid #7fafa4;
+      border-top: 5px solid var(--blue);
       display: flex;
       flex-direction: column;
     }
 
-    .metric:nth-child(2) { border-top-color: #2e4036; }
-    .metric:nth-child(3) { border-top-color: #c49844; }
+    .metric:nth-child(2) { border-top-color: var(--forest); }
+    .metric:nth-child(3) { border-top-color: var(--olive); }
 
     .metric-value {
       margin: 0 0 5px;
@@ -432,14 +448,14 @@
 
     .metric p {
       margin: 0;
-      color: #454a45;
+      color: #42514a;
       font-size: .93rem;
       line-height: 1.48;
     }
 
     .metric a {
       margin-top: 15px;
-      color: var(--rust);
+      color: var(--blue);
       font-family: "Archivo", Arial, sans-serif;
       font-size: 12px;
       font-weight: 600;
@@ -468,7 +484,7 @@
     .section-title .smallcaps {
       display: block;
       margin-bottom: 10px;
-      color: var(--teal);
+      color: var(--blue);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: .1em;
@@ -494,7 +510,7 @@
 
     .copy a,
     .text-link {
-      color: var(--rust);
+      color: var(--blue);
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
     }
@@ -527,7 +543,7 @@
       display: block;
       margin-bottom: 7px;
       font-family: "Archivo", Arial, sans-serif;
-      color: var(--teal);
+      color: var(--blue);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: .08em;
@@ -535,14 +551,14 @@
     }
 
     .fact-value {
-      color: #373c37;
+      color: #3a4741;
       font-size: .94rem;
       line-height: 1.45;
     }
 
     /* RESEARCH */
     .research-section {
-      background: var(--paper-2);
+      background: var(--forest-soft);
     }
 
     .research-intro {
@@ -570,23 +586,23 @@
       position: relative;
       min-height: 370px;
       padding: 28px 26px 26px;
-      background: var(--paper);
+      background: var(--paper-2);
       border: 1px solid var(--line);
       overflow: hidden;
     }
 
     .research-card:nth-child(2),
     .research-card:nth-child(3) {
-      background: var(--paper);
+      background: var(--paper-2);
     }
 
-    .research-card:nth-child(2) .research-number { color: var(--teal); }
-    .research-card:nth-child(3) .research-number { color: #c49844; }
+    .research-card:nth-child(2) .research-number { color: var(--forest); }
+    .research-card:nth-child(3) .research-number { color: var(--olive); }
 
     .research-number {
       display: block;
       margin-bottom: 55px;
-      color: var(--rust);
+      color: var(--blue);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: .08em;
@@ -602,7 +618,7 @@
 
     .research-card p {
       margin: 0;
-      color: #404640;
+      color: #3f4d46;
       font-size: .94rem;
       line-height: 1.52;
     }
@@ -670,7 +686,7 @@
 
     .pub-number {
       padding-top: 2px;
-      color: var(--rust);
+      color: var(--blue);
       font-family: "Archivo", Arial, sans-serif;
       font-size: 12px;
       font-weight: 700;
@@ -679,7 +695,7 @@
 
     .pub-citation {
       margin: 0;
-      color: #303530;
+      color: #303c36;
       font-size: .96rem;
       line-height: 1.53;
     }
@@ -704,12 +720,12 @@
     }
 
     .pub-status {
-      color: var(--teal);
+      color: var(--coral);
       font-weight: 700;
     }
 
     .pub-link {
-      color: var(--rust);
+      color: var(--blue);
       font-weight: 600;
       text-underline-offset: 3px;
     }
@@ -726,7 +742,7 @@
 
     /* POSITIONS */
     .positions {
-      background: #e6e4dd;
+      background: var(--forest-soft);
     }
 
     .appointments {
@@ -747,7 +763,7 @@
 
     .appointment time {
       font-family: "Archivo", Arial, sans-serif;
-      color: #a97f34;
+      color: var(--coral);
       font-size: 12px;
       font-weight: 700;
       padding-top: 4px;
@@ -766,7 +782,7 @@
 
     /* CONTACT */
     .contact {
-      background: var(--ink);
+      background: var(--navy);
       color: var(--cream);
       padding: clamp(72px, 10vw, 120px) 0 38px;
     }
@@ -777,7 +793,7 @@
       gap: 50px;
     }
 
-    .contact .eyebrow { color: #7fafa4; }
+    .contact .eyebrow { color: var(--olive); }
 
     .contact h2 {
       max-width: 12ch;
@@ -788,7 +804,7 @@
 
     .contact-copy {
       align-self: end;
-      color: rgba(243,241,234,.74);
+      color: rgba(246,247,244,.76);
     }
 
     .contact-copy p {
@@ -814,7 +830,7 @@
     }
 
     .footer-links a {
-      color: rgba(243,241,234,.68);
+      color: rgba(246,247,244,.76);
       text-underline-offset: 3px;
     }
 
@@ -826,8 +842,8 @@
       gap: 30px;
       margin-top: 72px;
       padding-top: 18px;
-      border-top: 1px solid rgba(243,241,234,.18);
-      color: rgba(243,241,234,.46);
+      border-top: 1px solid rgba(246,247,244,.20);
+      color: rgba(246,247,244,.48);
       font-family: "Archivo", Arial, sans-serif;
       font-size: 11px;
     }

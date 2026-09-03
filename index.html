@@ -21,16 +21,16 @@
 
   <style>
     :root {
-      --paper: #f6f3ed;
-      --paper-2: #fffdfa;
-      --ink: #1a1c1b;
-      --muted: #666a66;
-      --line: #d7d2c9;
-      --teal: #264b47;
-      --teal-soft: #e2ebe8;
-      --rust: #9a4d3f;
-      --rust-soft: #efe2dc;
-      --cream: #f7f0e5;
+      --paper: #f3f1ea;
+      --paper-2: #e9e6de;
+      --ink: #1c1f1b;
+      --muted: #646a62;
+      --line: #d2cec5;
+      --teal: #2e4036;
+      --teal-soft: #dfe8e3;
+      --rust: #7fafa4;
+      --rust-soft: #e9e6de;
+      --cream: #f3f1ea;
       --max: 1180px;
       --pad: clamp(22px, 5vw, 64px);
     }
@@ -77,7 +77,7 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(247, 244, 238, 0.93);
+      background: rgba(243, 241, 234, 0.94);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(23, 26, 25, .12);
     }
@@ -147,7 +147,7 @@
       top: 0;
       width: clamp(8px, 1.2vw, 16px);
       height: 100%;
-      background: var(--rust);
+      background: var(--teal);
     }
 
     .hero-grid {
@@ -182,7 +182,7 @@
     }
 
     h1 .surname {
-      color: var(--rust);
+      color: var(--ink);
     }
 
     .hero-lede {
@@ -258,8 +258,8 @@
       height: 72px;
       left: -20px;
       top: -20px;
-      border-top: 7px solid var(--rust);
-      border-left: 7px solid var(--rust);
+      border-top: 7px solid #c49844;
+      border-left: 7px solid #c49844;
     }
 
     .headshot {
@@ -277,7 +277,7 @@
       margin: 18px 0 0 18px;
       background: var(--paper-2);
       border: 1px solid var(--line);
-      border-left: 4px solid var(--rust);
+      border-left: 4px solid var(--teal);
     }
 
     .credential-row {
@@ -304,7 +304,7 @@
     .credential-value {
       font-size: .88rem;
       line-height: 1.42;
-      color: #373b38;
+      color: #3b403b;
     }
 
     .credential-value strong {
@@ -376,7 +376,7 @@
 
     .highlights-head p {
       margin: 0;
-      color: rgba(248,241,229,.74);
+      color: rgba(243,241,234,.76);
       max-width: 620px;
     }
 
@@ -391,13 +391,13 @@
       padding: 28px 27px 25px;
       background: var(--paper-2);
       color: var(--ink);
-      border-top: 5px solid var(--rust);
+      border-top: 5px solid #7fafa4;
       display: flex;
       flex-direction: column;
     }
 
-    .metric:nth-child(2) { border-top-color: #78958f; }
-    .metric:nth-child(3) { border-top-color: #b9796c; }
+    .metric:nth-child(2) { border-top-color: #2e4036; }
+    .metric:nth-child(3) { border-top-color: #c49844; }
 
     .metric-value {
       margin: 0 0 5px;
@@ -432,7 +432,7 @@
 
     .metric p {
       margin: 0;
-      color: #454844;
+      color: #454a45;
       font-size: .93rem;
       line-height: 1.48;
     }
@@ -468,7 +468,7 @@
     .section-title .smallcaps {
       display: block;
       margin-bottom: 10px;
-      color: var(--rust);
+      color: var(--teal);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: .1em;
@@ -535,7 +535,7 @@
     }
 
     .fact-value {
-      color: #353836;
+      color: #373c37;
       font-size: .94rem;
       line-height: 1.45;
     }
@@ -575,13 +575,13 @@
       overflow: hidden;
     }
 
-    .research-card:nth-child(2) {
-      background: var(--teal-soft);
+    .research-card:nth-child(2),
+    .research-card:nth-child(3) {
+      background: var(--paper);
     }
 
-    .research-card:nth-child(3) {
-      background: var(--rust-soft);
-    }
+    .research-card:nth-child(2) .research-number { color: var(--teal); }
+    .research-card:nth-child(3) .research-number { color: #c49844; }
 
     .research-number {
       display: block;
@@ -602,7 +602,7 @@
 
     .research-card p {
       margin: 0;
-      color: #3f4340;
+      color: #404640;
       font-size: .94rem;
       line-height: 1.52;
     }
@@ -679,7 +679,7 @@
 
     .pub-citation {
       margin: 0;
-      color: #2f3330;
+      color: #303530;
       font-size: .96rem;
       line-height: 1.53;
     }
@@ -726,7 +726,7 @@
 
     /* POSITIONS */
     .positions {
-      background: #eee9df;
+      background: #e6e4dd;
     }
 
     .appointments {
@@ -747,7 +747,7 @@
 
     .appointment time {
       font-family: "Archivo", Arial, sans-serif;
-      color: var(--rust);
+      color: #a97f34;
       font-size: 12px;
       font-weight: 700;
       padding-top: 4px;
@@ -777,7 +777,7 @@
       gap: 50px;
     }
 
-    .contact .eyebrow { color: #d8a69c; }
+    .contact .eyebrow { color: #7fafa4; }
 
     .contact h2 {
       max-width: 12ch;
@@ -788,7 +788,7 @@
 
     .contact-copy {
       align-self: end;
-      color: rgba(248,241,229,.72);
+      color: rgba(243,241,234,.74);
     }
 
     .contact-copy p {
@@ -814,7 +814,7 @@
     }
 
     .footer-links a {
-      color: rgba(248,241,229,.68);
+      color: rgba(243,241,234,.68);
       text-underline-offset: 3px;
     }
 
@@ -826,8 +826,8 @@
       gap: 30px;
       margin-top: 72px;
       padding-top: 18px;
-      border-top: 1px solid rgba(248,241,229,.18);
-      color: rgba(248,241,229,.44);
+      border-top: 1px solid rgba(243,241,234,.18);
+      color: rgba(243,241,234,.46);
       font-family: "Archivo", Arial, sans-serif;
       font-size: 11px;
     }
